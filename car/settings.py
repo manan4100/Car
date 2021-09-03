@@ -79,10 +79,13 @@ WSGI_APPLICATION = 'car.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'd1u5facimbb4hd',
+        'HOST' : 'ec2-35-174-122-153.compute-1.amazonaws.com',
+        'PORT' : '5432',
+        'USER' : 'dvvixwouptniux',
+        'PASSWORD' : '787a89fd99d7b810ab805dda1044f6464e4696caf7a3681d7101fd91dc66032d'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -126,7 +129,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static"
 ]
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 
