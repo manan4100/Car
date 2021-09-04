@@ -20,7 +20,6 @@ from django.urls import path, include
 from django.conf import settings
 from django.views.static import serve
 from django.conf.urls import url
-from django.conf.urls.static import static
 
 admin.site.site_header = "Car Admin"
 admin.site.site_title = "Car world Portal"
